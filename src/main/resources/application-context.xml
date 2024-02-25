@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+     https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="car" class="org.example.Car">
+        <property name="name" value="Peugeot"/>
+        <property name="engine" ref="gasEngine" />
+    </bean>
+    <bean id="engine" class="org.example.Engine">
+
+    </bean>
+
+    <bean id="gasEngine" class="org.example.GasEngine">
+
+    </bean>
+
+
+</beans>
